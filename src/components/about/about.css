@@ -64,3 +64,19 @@
 .about__title {
     font-size: 1.875rem;
 }
+
+@media screen and (max-width: 1024px){
+    .about__container {
+        grid-template-columns: 720px;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+
+    .about__data::before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 49%;
+        top: -20px;
+    }
+}

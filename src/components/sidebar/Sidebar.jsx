@@ -4,7 +4,8 @@ import './sidebar.css'
 
 const Sidebar = () => {
   return (
-    <aside className='aside'>
+    <>
+      <aside className='aside'>
       <a href="#home" className='nav__logo'>
         <img src={LogoSide} alt="" />
       </a>
@@ -21,11 +22,11 @@ const Sidebar = () => {
                 <i className='icon-user-following'></i>
               </a>
             </li>
-            <li className='nav__item'>
+            {/* <li className='nav__item'>
               <a href='#services' className='nav__link'>
                 <i className='icon-briefcase'></i>
               </a>
-            </li>
+            </li> */}
             <li className='nav__item'>
               <a href='#resume' className='nav__link'>
                 <i className='icon-graduation'></i>
@@ -36,11 +37,11 @@ const Sidebar = () => {
                 <i className='icon-layers'></i>
               </a>
             </li>
-            <li className='nav__item'>
+            {/* <li className='nav__item'>
               <a href='#blog' className='nav__link'>
                 <i className='icon-note'></i>
               </a>
-            </li>
+            </li> */}
             <li className='nav__item'>
               <a href='#contact' className='nav__link'>
                 <i className='icon-bubble'></i>
@@ -54,6 +55,11 @@ const Sidebar = () => {
         <span className='copyright'>&copy; 2022</span>
       </div>
     </aside>
+
+    <div className='nav__toggle'>
+      <i className='icon-menu'></i>
+    </div>
+    </>
   )
 }
 

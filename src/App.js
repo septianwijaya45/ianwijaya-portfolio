@@ -20,8 +20,6 @@ function App() {
         <Services/>
         <Resume/>
         <Portfolio/>
-        <Testimonials/>
-        <Blog/>
         <Contact/>
       </main>
     </>
