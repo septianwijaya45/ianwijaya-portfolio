@@ -37,7 +37,7 @@ const Portfolio = () => {
 
               <span className='work__category'>{data.category}</span>
               <h3 className='work__title'>{data.title}</h3>
-              <a href='#home' className='work__button'>
+              <a href={data.link} className='work__button'>
                 <i className='icon-link icon'></i>
               </a>
             </div>
